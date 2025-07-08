@@ -1,0 +1,344 @@
+/* Importar fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* Colores de Boca Juniors para Bootstrap */
+:root {
+    --bs-primary: #003366; /* Azul Boca */
+    --bs-secondary: #FFD700; /* Amarillo Boca */
+    --bs-warning: #FFD700; /* Usamos warning para el amarillo en Bootstrap */
+    --bs-blue: #003366; /* Mantener para consistencia */
+    --bs-yellow: #FFD700; /* Mantener para consistencia */
+}
+
+/* Reset y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente principal */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4; /* Un gris claro para el fondo */
+}
+
+/* Estilos de encabezados (personalizados, ya que Bootstrap maneja su propio tamaño) */
+h1,
+h2,
+h3 {
+    font-family: 'Oswald', sans-serif; /* Una fuente para los títulos */
+    color: var(--bs-primary); /* Azul Boca */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos de enlaces (ya los maneja Bootstrap, pero puedes personalizar más) */
+a {
+    color: var(--bs-secondary); /* Amarillo Boca */
+    text-decoration: none; /* Quita el subrayado por defecto */
+}
+
+a:hover {
+    text-decoration: underline; /* Subraya al pasar el mouse */
+}
+
+/* Contenedor principal (Bootstrap ya maneja .container) */
+/* Puedes eliminar el main si solo lo usabas para el ancho máximo y el margen */
+/* main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+section {
+    padding: 40px 0;
+    margin-bottom: 20px;
+    /* border-bottom: 1px solid #eee; */ /* Bootstrap gaps y padding ya manejan esto */
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+/*-----------------------------------------------------------------*/
+/* Estilos del encabezado (muchos se van con Bootstrap) */
+header .logo {
+    max-width: 100px; /* Tamaño del logo */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Puedes quitar estos estilos de nav si ya usas las clases de Bootstrap */
+/* nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--bs-secondary);
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+} */
+
+/*-------------------------------------------------------------------*/
+
+footer .social-links a {
+    color: var(--bs-secondary);
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+/*----------------------------------------------------------------------*/
+
+/* Estilos para la sección de inicio */
+#inicio {
+    /*background: url('img/Cancha_Boca.jpg') no-repeat center center/cover;*/ /* Ya está en el HTML inline con style */
+    /* color: #fff; */ /* Ya lo da el HTML con text-white */
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */ /* Se mantiene */
+    /* min-height: 400px; */ /* Se puede mantener o ajustar con py-5 */
+    /* display: flex; */ /* Ya lo manejan las clases de Bootstrap d-flex, flex-column, etc. */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+    /* padding: 60px 20px; */
+}
+
+#inicio h2 {
+    color: var(--bs-warning); /* Amarillo Boca */
+    /* font-size: 3em; */ /* Bootstrap ya maneja tamaños de fuente */
+    /* margin-bottom: 15px; */
+}
+
+#inicio p {
+    /* font-size: 1.2em; */ /* Bootstrap ya maneja tamaños de fuente */
+    /* margin-bottom: 20px; */
+}
+
+/* Estilos para el contenedor de video/iframe (Bootstrap lo hace con ratio) */
+/* Puedes quitar si confías en la clase ratio */
+/* .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-top: 20px;
+    background-color: #000;
+}
+
+.video-container iframe,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/*---------------------------------------------------------------------*/
+
+/* Sección Productos con Flexbox (Bootstrap ya usa flexbox en sus grids) */
+/* Puedes adaptar o eliminar estos selectores si solo usas el grid de Bootstrap */
+#productos .productos-grid {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* gap: 20px; */ /* Bootstrap usa g-4 para esto */
+    /* padding: 20px; */
+}
+
+#productos .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    /* flex: 1 1 300px; */ /* Esto lo manejas con row-cols-md-2, row-cols-lg-3 */
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+#productos .card:hover {
+    transform: translateY(-5px);
+}
+
+#productos .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+#productos .card h3 {
+    color: var(--bs-primary);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#productos .card p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+#productos .card span {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--bs-secondary);
+}
+
+/*----------------------------------------------------------------------*/
+
+/* Sección Reseñas con Grid (Bootstrap también usa grid) */
+/* Adaptar o eliminar si usas row-cols en HTML */
+#reseñas .reseñas-grid {
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    /* gap: 20px; */
+    /* padding: 20px; */
+}
+
+#reseñas .reseña-item {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-left: 5px solid var(--bs-primary);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+#reseñas .reseña-item h3 {
+    color: var(--bs-primary);
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    text-align: left;
+}
+
+#reseñas .reseña-item p {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+
+#reseñas .reseña-item span {
+    font-weight: bold;
+    color: #555;
+    text-align: right;
+    display: block;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/* Estilos del Formulario de Contacto (muchos se van con Bootstrap) */
+#contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+#contacto label {
+    /* display: block; */ /* Bootstrap form-label ya hace esto */
+    /* margin-bottom: 8px; */
+    font-weight: bold;
+    color: var(--bs-primary);
+}
+
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto textarea {
+    /* width: 100%; */ /* Bootstrap form-control ya hace esto */
+    /* padding: 12px; */
+    /* margin-bottom: 20px; */
+    /* border: 1px solid #ddd; */
+    /* border-radius: 5px; */
+    /* font-size: 1em; */
+}
+
+#contacto textarea {
+    resize: vertical;
+}
+
+#contacto input:focus,
+#contacto textarea:focus {
+    border-color: var(--bs-secondary);
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+#contacto button {
+    /* background-color: var(--bs-primary); */ /* Bootstrap btn-primary lo maneja */
+    /* color: #fff; */
+    /* padding: 15px 25px; */
+    /* border: none; */
+    /* border-radius: 5px; */
+    /* font-size: 1.1em; */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: flex-start;
+}
+
+#contacto button:hover {
+    background-color: #004080;
+    transform: translateY(-2px);
+}
+
+/* Media Queries para diseño responsivo */
+/* Muchos de estos ya los maneja Bootstrap con sus breakpoints */
+@media (max-width: 768px) {
+    /* nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    } */
+
+    #productos .card {
+        flex: 1 1 280px;
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boca Juniors | Club Atlético</title>
+    <meta name="description" content="Tienda oficial del Club Atlético Boca Juniors. Encuentra camisetas, indumentaria y productos exclusivos del equipo más grande de Argentina.">
+    <meta name="keywords" content="Boca Juniors, tienda oficial, camiseta Boca, indumentaria Boca, fútbol argentino, La Bombonera, Xeneize, productos Boca">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="bg-primary text-white py-3 border-bottom border-warning border-5">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="img/boca_logo.png" alt="Logo de Boca Juniors" class="logo img-fluid" style="max-width: 80px;">
+            <h1 class="my-0 fs-2">Club Atlético Boca Juniors</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-warning fw-bold" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning fw-bold" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning fw-bold" href="#reseñas">Reseñas</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning fw-bold" href="#contacto">Contacto</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning fw-bold" href="#" id="cart-icon" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            🛒 <span id="cart-count" class="badge bg-danger rounded-pill">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-4">
+        <section id="inicio" class="text-center py-5 rounded shadow mb-4"
+            style="background: url('img/Cancha_Boca.jpg') no-repeat center center/cover; color: #fff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">
+            <h2 class="text-warning display-4 mb-3">Bienvenidos al Mundo Xeneize</h2>
+            <p class="fs-5 mb-4">Aquí encontrarás todo sobre el Club Atlético Boca Juniors, el equipo más grande de Argentina.</p>
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-8">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/swxMHPsDycE?si=s4alXjmZ3RvosYhh" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                    </div>
+                </div>
+            </div>
+            <p class="fs-5">Disfruta de nuestro video oficial y conoce más sobre nuestra historia y pasión.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <video controls class="w-100 rounded">
+                        <source src="video/Video_Boca.mp4" type="video/mp4">
+                        Tu navegador no soporta la etiqueta de video.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section id="productos" class="py-5">
+            <h2 class="text-primary mb-4">Nuestros Productos Oficiales</h2>
+            <div id="product-list" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                </div>
+        </section>
+
+        <section id="reseñas" class="py-5 border-top border-bottom border-light">
+            <h2 class="text-primary mb-4">Lo que dicen nuestros Hinchas</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-start border-primary border-5">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary">Gran Calidad</h3>
+                            <p class="card-text fst-italic text-muted">"La camiseta es excelente, los materiales y el diseño son de primera."</p>
+                            <span class="d-block text-end fw-bold text-secondary">- Juan Perez</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-start border-primary border-5">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary">Envío Rápido</h3>
+                            <p class="card-text fst-italic text-muted">"Llegó antes de lo esperado y el producto es tal cual la descripción."</p>
+                            <span class="d-block text-end fw-bold text-secondary">- Maria Garcia.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-start border-primary border-5">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary">Atención de 10</h3>
+                            <p class="card-text fst-italic text-muted">"Tuve una consulta y me respondieron enseguida. El mejor servicio al cliente."</p>
+                            <span class="d-block text-end fw-bold text-secondary">- Carlos Rodriguez.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="py-5">
+            <h2 class="text-primary mb-4">Contáctanos</h2>
+            <p class="text-center mb-4">Envíanos tus consultas o comentarios. ¡Queremos escucharte!</p>
+            <form action="https://formspree.io/f/mblovjdr" method="POST" class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label text-primary fw-bold">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    <div class="invalid-feedback">
+                        Por favor, ingresa tu nombre.
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label text-primary fw-bold">Correo Electrónico:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                    <div class="invalid-feedback">
+                        Por favor, ingresa un correo electrónico válido.
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label text-primary fw-bold">Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                    <div class="invalid-feedback">
+                        Por favor, ingresa tu mensaje.
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg mt-3">Enviar Mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="bg-primary text-white text-center py-4 mt-5 border-top border-warning border-5">
+        <p class="mb-2">&copy; 2025 Club Atlético Boca Juniors. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/BocaJuniors" target="_blank" class="text-warning mx-2 fw-bold">Facebook</a>
+            <a href="https://twitter.com/BocaJuniors" target="_blank" class="text-warning mx-2 fw-bold">Twitter</a>
+            <a href="https://www.instagram.com/bocajrsoficial/" target="_blank" class="text-warning mx-2 fw-bold">Instagram</a>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="cartModalLabel">🛒 Tu Carrito de Compras</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="cart-items" class="list-group">
+                        <p class="text-muted text-center" id="empty-cart-message">El carrito está vacío.</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between fw-bold fs-5 text-primary">
+                        <span>Total:</span>
+                        <span>$<span id="cart-total">0.00</span></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir Comprando</button>
+                    <button type="button" class="btn btn-warning text-primary fw-bold">Proceder al Pago</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script src="/boca-juniors-web/js/script.js"></script>
+</body>
+
+</html>
