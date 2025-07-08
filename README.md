@@ -53,11 +53,12 @@ boca-juniors-web/
 └── js/ // Carpeta para scripts JavaScript
 └── script.js // Lógica principal del proyecto
 
-    ⚙️ Cómo Ejecutar el Proyecto
+    ⚙️ Cómo Ejecutar el Proyecto : https://jorge-loyo.github.io/boca-juniors-web/Index.html
+
+    o desde un editor de codigo:
 
 1. Clona o descarga este repositorio:
-   https://github.com/Jorge-Loyo/Cursofront.git
-   la carpeta de la entrega es https://github.com/Jorge-Loyo/Cursofront/tree/main/Entregas/boca-juniors-web
+   https://github.com/Jorge-Loyo/boca-juniors-web.git
 
 2. Navega a la carpeta del proyecto:
    cd boca-juniors-web
